@@ -21,6 +21,8 @@ This changes have been done by configuring a ruleset in the repository settings.
 
 ### 2. CI Pipeline on PRs
 
+Idée pour pipeline : ne pas la déclencer lors de modifications de ce fichier. (ou autre markdown)
+
 ### 3. Dependabot Integration
 
 ### 4. Contribution Guidelines
