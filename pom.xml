@@ -38,6 +38,16 @@
           </excludedClasses>
         </configuration>
       </plugin>
+
+      <!-- Add formatter plugin for Linters -->
+      <plugin>
+        <groupId>net.revelc.code.formatter</groupId>
+        <artifactId>formatter-maven-plugin</artifactId>
+        <version>2.23.0</version>
+        <configuration>
+          <javaFormatter>googleJavaFormat</javaFormatter>
+        </configuration>
+      </plugin>
     </plugins>
   </build>
 

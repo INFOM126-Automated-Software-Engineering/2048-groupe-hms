@@ -5,8 +5,6 @@ package be.unamur.game2048.models;
  */
 public class Tile {
 
-
-
     /**
      * Si la tuile a déjà été fusionnée ou non pendant ce tour.
      */
@@ -48,6 +46,7 @@ public class Tile {
 
     /**
      * Fusionne cette tuile avec une autre.
+     *
      * @return la somme des valeurs des deux tuiles, si la fusion est impossible, renvoie -1.
      */
     public int mergeWith(Tile other) {
@@ -67,7 +66,7 @@ public class Tile {
     }
 
     public boolean equals(Object other) {
-        if(other == null)
+        if (other == null)
             return false;
         // Si les classes des deux objets ne sont pas les mêmes.
         if (this.getClass() != other.getClass())

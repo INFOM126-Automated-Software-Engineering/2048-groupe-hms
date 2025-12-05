@@ -12,9 +12,8 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 
 /**
- * /!\ NE PAS TESTER CETTE CLASSE /!\
- * Cette classe s'occupe de l'affichage de la grille.
- * Inspiré de http://www.rosettacode.org/wiki/2048#Java
+ * /!\ NE PAS TESTER CETTE CLASSE /!\ Cette classe s'occupe de l'affichage de la grille. Inspiré de
+ * http://www.rosettacode.org/wiki/2048#Java
  */
 
 public class GamePanel extends JPanel {
@@ -44,18 +43,18 @@ public class GamePanel extends JPanel {
                 if (controller == null)
                     return;
                 switch (e.getKeyCode()) {
-                    case KeyEvent.VK_UP:
-                        controller.moveUp(false);
-                        break;
-                    case KeyEvent.VK_DOWN:
-                        controller.moveDown(false);
-                        break;
-                    case KeyEvent.VK_LEFT:
-                        controller.moveLeft(false);
-                        break;
-                    case KeyEvent.VK_RIGHT:
-                        controller.moveRight(false);
-                        break;
+                case KeyEvent.VK_UP:
+                    controller.moveUp(false);
+                    break;
+                case KeyEvent.VK_DOWN:
+                    controller.moveDown(false);
+                    break;
+                case KeyEvent.VK_LEFT:
+                    controller.moveLeft(false);
+                    break;
+                case KeyEvent.VK_RIGHT:
+                    controller.moveRight(false);
+                    break;
                 }
                 repaint();
             }

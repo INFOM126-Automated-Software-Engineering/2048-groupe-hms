@@ -103,10 +103,13 @@ public class GameController {
      * CONSEIL : Ne perdez pas de temps à essayer de comprendre l'algorithme, faites plutôt du blackboxtesting ici.
      * Imaginez plutôt comment un mouvement dans une direction peut changer la grille.
      *
-     * @param checkingAvailableMoves spécifie si on vérifie simplement si le mouvement est possible ou si on doit l'exécuter.
+     * @param checkingAvailableMoves
+     *            spécifie si on vérifie simplement si le mouvement est possible ou si on doit l'exécuter.
+     *
      * @return Vrai lorsque le mouvement est possible, faux sinon.
      */
-    private boolean move(int firstStartPos, int lastStartPos, int startPosIncr, int nextPosIncr, boolean checkingAvailableMoves) {
+    private boolean move(int firstStartPos, int lastStartPos, int startPosIncr, int nextPosIncr,
+            boolean checkingAvailableMoves) {
         if (gamestate != GameState.running)
             return false;
         boolean hasMoved = false;
@@ -115,7 +118,7 @@ public class GameController {
             for (int step = GameParams.sideLength - 1; step > 0; step--) {
                 int pos = startPos + (step - 1) * nextPosIncr;
                 int nextPos = startPos + step * nextPosIncr;
-                history.add(0, new int[]{pos, nextPos});
+                history.add(0, new int[] { pos, nextPos });
                 if (grid.getTile(pos) == null)
                     continue;
                 for (int[] positions : history) {
