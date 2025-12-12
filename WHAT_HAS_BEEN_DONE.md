@@ -38,10 +38,10 @@ The pipeline includes the following steps:
     3. Run unit tests using Maven to verify that the code behaves as expected. This step uses the `mvn test` command to execute the tests.
 
 Future improvements:
-- Avoid to run the pipeline if only documentation files are changed. 
-- Integrate code coverage report generation
-- Integrate code scanning with CodeQL
-- Integrate SonarCloud analysis
+- Avoid to run the pipeline if only documentation files are changed. (good)
+- Integrate code coverage report generation. (test)
+- Integrate code scanning with CodeQL. (good)
+- Integrate SonarCloud analysis (Louca)
 - Integrate deployment step to a staging environment (via GitHub Pages or docker container deployment - if time permits)
 
 ### 3. Dependabot Integration
