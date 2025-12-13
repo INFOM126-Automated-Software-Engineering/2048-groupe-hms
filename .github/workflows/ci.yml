@@ -112,4 +112,4 @@ jobs:
       - name: Run SonarCloud Analysis
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn verify sonar:sonar -Dsonar.projectKey=INFOM126-Automated-Software-Engineering_2048-groupe-hms -Dsnoar.organization=Dsonar.organization=INFOM126-Automated-Software-Engineering -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
+        run: mvn verify sonar:sonar -Dsonar.projectKey=INFOM126-Automated-Software-Engineering_2048-groupe-hms -Dsnoar.organization=Dsonar.organization=infom126-automated-software-engineering -Dsonar.host.url=https://sonarcloud.io -Dsonar.login=$SONAR_TOKEN
