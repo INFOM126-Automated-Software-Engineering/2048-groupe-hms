@@ -1,63 +1,59 @@
+## Description
 
-# Pull Request Template - Project 2048 
+Provide a clear and concise description of what this PR does.
 
-This document describes the rules and best practices to follow when contributing to the 2048 project via Pull Requests.
-All contributions must go through a Pull Request in order to ensure code quality and project stability.
+## Type of Change
 
----
+*Please delete options that are not relevant*
 
-## General rules for contributing to the project 
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] Documentation update
+- [ ] Configuration or build changes
+- [ ] Code refactoring (no functional changes)
+- [ ] Performance improvement
+- [ ] Test updates
 
-- **Do not push directly to `main`**. All changes or contributions must go through a Pull Request.
+## Testing
 
-- **Each feature must be developed in a dedicated branch**.
-    - `ci/check_path_ignore`
-    - `dependabot/maven/org.pitest-pitest-maven-1.22.0`
+*Describe the tests you ran to verify your changes*
 
-- ** One Pull Request per objective
+### Test Checklist
 
-- ** Respect the existing code style** and ensure that Maven accepts it.
+- [ ] All existing tests pass (`mvn test`)
+- [ ] New tests added for new functionality
+- [ ] Manual testing performed
+- [ ] Code compiles without errors (`mvn package`)
 
-- Use **Draft Pull Requests** if the work is not complete but you want to launch CI or request early feedback.
+### How to Test
 
-- A Pull Request must be reviewed and approved before being merged.
+*Provide step-by-step instructions for reviewers to test your changes*
 
+1. 
+2. 
+3. 
 
----
+## 📸 Screenshots / Demo
 
-## Submit a Pull Request
+*If applicable, add screenshots or GIFs showing the changes in action*
 
-1. Create a branch from `main`.
-2. Implement the desired feature or fix.
-3. Ensure that:
-   - the project compiles correctly and passes the tests
-   - the code is formatted correctly
-4. Write a well-explained Pull Request
-5. Wait for review and apply the requested changes.
+## Pre-Submission Checklist
 
+- [ ] I have read the [Contributing Guidelines](../../CONTRIBUTING.md)
+- [ ] My code follows the project's code style
+- [ ] I have performed a self-review of my own code
+- [ ] I have commented my code, particularly in hard-to-understand areas
+- [ ] I have made corresponding changes to the documentation
+- [ ] My changes generate no new warnings or errors
+- [ ] I have added tests that prove my fix is effective or that my feature works
+- [ ] New and existing unit tests pass locally with my changes
+- [ ] Any dependent changes have been merged and published
 
----
+## Additional Notes
 
-## Rules for code review
-
-- Pull requests must be approved by **at least one reviewer**.
-- Comments must be taken into account, responded to, or justified.
-- In case of Git conflict: **resolve by merging**
-- Avoid rebasing your changes. If you are asked to make changes during the review process, make them as a new commit.
-- If you are asked to make changes during the review process, make them as a new commit.
-
-
----
-
-## Conditions for merging a Pull Request:
-
-A Pull Request can only be merged if:
-
-- It has at least **one approval** from a reviewer
-- All CI checks are successful
-- All conflicts are resolved
-- The Pull Request description is clear  
+*Add any additional notes, context, or considerations for reviewers*
 
 ---
 
-Please respect these rules to ensure the quality of the 2048 project and facilitate collaboration between group members.
+**For Reviewers:** Please ensure all CI checks pass and requirements are met before approving. See our [Contributing Guidelines](../../CONTRIBUTING.md) for the complete review process.
