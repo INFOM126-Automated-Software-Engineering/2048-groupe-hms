@@ -127,7 +127,7 @@ Ensure your code meets these requirements:
 - **All Pull Requests require at least one approval** from a reviewer
 - **Address review comments** - Respond to or justify each comment
 - **Make requested changes** as new commits (avoid force-pushing during review)
-- **Resolve conflicts** - Use merge, not rebase, to resolve conflicts
+- **Resolve conflicts** - Rebase your branch onto the latest main branch and resolve conflicts before merging
 - **Be patient and respectful** - Reviews help improve code quality
 
 ### Merging Requirements
