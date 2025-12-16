@@ -46,7 +46,16 @@ Future improvements:
 
 ### 3. Dependabot Integration
 
+Dependabot has been integrated into the project to improve dependecy management and security. Three options have been enabled to allow a functional dependabot. 
+1. Dependency graph : it allows github to analyze all project dependecies defined in the maven configuration.
+2. Dependabot alerts : it detects known vulneraribilities affecting libraries.
+3. Dependabot security updates : it allows github to automatically pull requests when a security patch is available for a vulnerable dependency
+
+In addition, a configuration file (`.github/dependabot.yml`) has been added to the repository. This file enables dependabot version updates and defines a weekly schedule to keep dependencies up to date. This setup helps reduce technical debt and ensure that the project remains secure over time.
+
 ### 4. Contribution Guidelines
+
+A `CONTRIBUTING.md` file has been added to the repository to define basic contribution rules. The files specifies that all changes must be made through pull requests using dedicated branches and that the CI pipeline must pass before merging. It also includes basic build and test requirements using Maven as well as security rules such as avoiding commiting secrets and keeping Dependabot and CodeQL enabled.
 
 Some files have already been created to guide contributors, but are still to be completed:
 - pull_request_template.md
