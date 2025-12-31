@@ -107,6 +107,7 @@ jobs:
         with:
           distribution: 'temurin'
           java-version: '17'
+          cache: 'maven'
 
       - name: Run SonarCloud Analysis
         env:
