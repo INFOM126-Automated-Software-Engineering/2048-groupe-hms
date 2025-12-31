@@ -46,7 +46,7 @@ Future improvements:
 
 ### 3. Dependabot Integration
 
-Dependabot has been integrated into the project to improve dependecy management and security. Three options have been enabled to allow a functional dependabot. 
+Dependabot has been integrated into the project to improve dependency management and security. Three options have been enabled to allow a functional dependabot. 
 1. Dependency graph : it allows github to analyze all project dependecies defined in the maven configuration.
 2. Dependabot alerts : it detects known vulneraribilities affecting libraries.
 3. Dependabot security updates : it allows github to automatically pull requests when a security patch is available for a vulnerable dependency
