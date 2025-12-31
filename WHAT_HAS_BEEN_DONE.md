@@ -13,11 +13,8 @@ This changes have been done by configuring a ruleset in the repository settings.
 - No Bypass
 - All branches are targeted
 - Require PR before merging, with required reviews set to 1 (as there is only 4 contributors in total)
-- Require status checks to pass -> specific checks to add later
 - Block force pushes
-- Require code scanning results with CodeQL
 - Automatically request Copilot code review
-- Manage static analysis tools in Copilot code review with ESLint 
 
 ### 2. CI Pipeline on PRs
 
