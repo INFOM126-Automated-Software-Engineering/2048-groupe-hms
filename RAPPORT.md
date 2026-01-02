@@ -64,7 +64,9 @@ Chaque membre de l'équipe a été responsable de différentes parties du projet
 
 ### Edwyn Eben
 
-TO DO
+- Mise en place du template de pull request.
+- Création du dossier .github/ISSUE_TEMPLATE pour structurer la gestion des issues.
+- Rédaction des templates d’issues Bug Report et Feature Request.
 
 ### Nathan Lambrechts
 
