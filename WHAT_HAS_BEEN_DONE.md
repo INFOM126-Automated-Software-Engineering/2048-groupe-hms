@@ -36,9 +36,9 @@ The pipeline includes the following steps:
 
 Future improvements:
 - Avoid to run the pipeline if only documentation files are changed. (good)
-- Integrate code coverage report generation. (test)
+- Integrate code coverage report generation. (good)
 - Integrate code scanning with CodeQL. (good)
-- Integrate SonarCloud analysis (Louca)
+- Integrate SonarCloud analysis (good)
 - Integrate deployment step to a staging environment (via GitHub Pages or docker container deployment - if time permits)
 
 ### 3. Dependabot Integration

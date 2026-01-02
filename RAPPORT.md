@@ -72,7 +72,9 @@ TO DO
 
 ### Louca Mathieu
 
-TO DO
+- Intégration de la génération de rapport de code coverage dans le CI/CD. 
+- Intégration de SonarCloud au projet. 
+- Faire en sorte que le pipeline ne soit pas run si seulement de la documentation est ajouté. 
 
 ### Florian Stormacq
 
@@ -84,9 +86,13 @@ TO DO
 
 Comme tout projet, celui-ci a rencontré des défis et de nombreuses opportunités d'apprentissage. La mise en place d'une pipeline CI/CD a permis de comprendre par la pratique les concepts de l'intégration continue et du déploiement continu, ainsi que l'importance de la qualité du code et des tests automatisés.
 
-Cependant, des améliorations sont encore possibles. En effet, ... TO DO
+Cependant, des améliorations sont encore possibles. En effet, nous avions par exemple eu l'idée initial d'intégrer une étape de deploiement d’un conteneur Docker pour le projet, mais nous avons pas été à bout de l'idée. 
 
-De plus, certains aspects de ce projet se sont avérés plus complexes que prévu, tels que ... TO DO
+... TO DO (autres idées)
+
+De plus, certains aspects de ce projet se sont avérés plus complexes que prévu, tels que la mise en place de SonarCloud. Bien que familarisier une première fois avec dans le cours de INFOM124 (Vérification & Validation Logicielle), une mise en main a été nécéssaire et certaines difficultés ont été rencontrés, notamment à la modification des prérequis de sonar pour se lancer dans le CI (intiallement nous avions needs: tests puis nous avons modifié pour needs: [build, coverage]) sauf que cela a crée des soucis pour reconnaitre SonarCloud. 
+
+... TO DO (autres difficultés)
 
 ## 5. Annexes
 
