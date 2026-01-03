@@ -13,11 +13,8 @@ This changes have been done by configuring a ruleset in the repository settings.
 - No Bypass
 - All branches are targeted
 - Require PR before merging, with required reviews set to 1 (as there is only 4 contributors in total)
-- Require status checks to pass -> specific checks to add later
 - Block force pushes
-- Require code scanning results with CodeQL
 - Automatically request Copilot code review
-- Manage static analysis tools in Copilot code review with ESLint 
 
 ### 2. CI Pipeline on PRs
 
@@ -39,9 +36,9 @@ The pipeline includes the following steps:
 
 Future improvements:
 - Avoid to run the pipeline if only documentation files are changed. (good)
-- Integrate code coverage report generation. (test)
+- Integrate code coverage report generation. (good)
 - Integrate code scanning with CodeQL. (good)
-- Integrate SonarCloud analysis (Louca)
+- Integrate SonarCloud analysis (good)
 - Integrate deployment step to a staging environment (via GitHub Pages or docker container deployment - if time permits)
 
 ### 3. Dependabot Integration
