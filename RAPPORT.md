@@ -53,8 +53,8 @@ TO DO
 
 En plus de la pipeline principale, deux workflows additionnels ont été mis en place pour renforcer la sécurité et la maintenance du projet :
 
-1. **Dependabot :** TO DO
-2. **CodeQL :** TO DO
+1. **Dependabot :** Dependabot a été configuré pour assurer la gestion des dépendances et la mise à jour de celles ci. Deux fonctionnalités en particulier ont été ajouté : dependency graph et dependabot alerts. Le premier permettant l'analyse des dépendances Maven et l'autre a été activé pour détecter les vulnérabilités connues dans les bibliothèques tierces. Un fichier `dependabot.yml` a également été ajouté afin de configurer la surveillance des dépendances Maven et de vérifier de manière hebdomadaire si des mises à jour sont disponibles. Dependabot pourra donc propose des pull requests de mise à jour de dépendances lorsque des versions plus récentes sont détectées. 
+2. **CodeQL :** Un workflow de code scanning CodeQL a été mis en place via Github Actions. Ce workflow permet d'analyser automatiquement le code source afin de détecter d'éventuelles failles de sécurité ou de mauvaises pratiques.
 
 Ces workflows fonctionnent en parallèle de la pipeline principale et contribuent à maintenir un haut niveau de qualité et de sécurité dans le projet.
 
