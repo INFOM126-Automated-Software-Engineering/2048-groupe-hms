@@ -70,7 +70,8 @@ Chaque membre de l'équipe a été responsable de différentes parties du projet
 
 ### Nathan Lambrechts
 
-TO DO 
+- Activation de la gestion des dépendances avec Dependabot et création de son fichier pour configurer les mises à jour Maven 
+- Mise en place du code scanning avec la configuration de CodeQL et l'ajout d'un workflow Github Actions pour une analyse automatique du code
 
 ### Louca Mathieu
 
