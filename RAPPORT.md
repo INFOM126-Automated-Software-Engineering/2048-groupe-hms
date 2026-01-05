@@ -107,4 +107,4 @@ En supplément du workflow principal décrit précédemment, plusieurs fichiers 
 
 ## 6. Conclusion
 
-TO DO
+Ce deuxième projet nous a permis de mettre en pratique les concepts théoriques abordés dans le premier projet basé sur les recherches DORA. Alors que le projet précédent était principalement axé sur l'analyse et la recherche, ce projet nous a donné l'occasion d'appliquer ces principes de manière pratique grâce à la mise en œuvre d'un pipeline CI/CD et des meilleures pratiques DevOps pour un projet 2048.
