@@ -89,7 +89,7 @@ Cependant, des améliorations sont encore possibles. En effet, nous avions par e
 
 De plus, certains aspects de ce projet se sont avérés plus complexes que prévu, tels que la mise en place de SonarCloud. Bien que familiarisé une première fois avec dans le cours de INFOM124 (Vérification & Validation Logicielle), une mise en main a été nécessaire et certaines difficultés ont été rencontrées, notamment à la modification des prérequis de sonar pour se lancer dans le CI (initialement nous avions `needs: tests` puis nous avons modifié pour `needs: [build, coverage]`) sauf que cela a créé des soucis pour reconnaitre SonarCloud. 
 
-Nous avons aussi choisi de ne pas toucher au code source du projet, comme cela n'était pas demandé dans les consignes. De ce fait, SonarCloud détecte qu'il y a une condition failed dans le main, que nous avons laissée. Cela pourrait se corriger facilement simplement en rajoutant un override de la méthode hashcode() dans la classe Tile. 
+Nous avons aussi choisi de ne pas modifier le code source du projet, puisque ce n'était pas demandé dans les consignes. De ce fait, SonarCloud détecte une condition `failed` dans `main`, que nous avons laissée. Cela pourrait être corrigé facilement, en ajoutant un `@Override` de la méthode `hashcode()` dans la classe `Tile`. 
 
 ## 5. Annexes
 
