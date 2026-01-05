@@ -43,18 +43,14 @@ La pipeline principale est composée de cinq jobs distincts :
 
 Le schéma d'exécution des jobs est le suivant : 
 
-```
-
-TO DO
-
-```
+![Schéma de la pipeline CI/CD](./pipeline_diagram.png){width=75%}
 
 ### 2.3 Workflows additionnels
 
 En plus de la pipeline principale, deux workflows additionnels ont été mis en place pour renforcer la sécurité et la maintenance du projet :
 
-1. **Dependabot :** Dependabot a été configuré pour assurer la gestion des dépendances et la mise à jour de celles ci. Deux fonctionnalités en particulier ont été ajouté : dependency graph et dependabot alerts. Le premier permettant l'analyse des dépendances Maven et l'autre a été activé pour détecter les vulnérabilités connues dans les bibliothèques tierces. Un fichier `dependabot.yml` a également été ajouté afin de configurer la surveillance des dépendances Maven et de vérifier de manière hebdomadaire si des mises à jour sont disponibles. Dependabot pourra donc propose des pull requests de mise à jour de dépendances lorsque des versions plus récentes sont détectées. 
-2. **CodeQL :** Un workflow de code scanning CodeQL a été mis en place via Github Actions. Ce workflow permet d'analyser automatiquement le code source afin de détecter d'éventuelles failles de sécurité ou de mauvaises pratiques.
+1. **Dependabot :** Dependabot a été configuré pour assurer la gestion des dépendances et la mise à jour de celles-ci. Deux fonctionnalités en particulier ont été ajoutées : dependency graph et dependabot alerts. Le premier permettant l'analyse des dépendances Maven et l'autre a été activé pour détecter les vulnérabilités connues dans les bibliothèques tierces. Un fichier `dependabot.yml` a également été ajouté afin de configurer la surveillance des dépendances Maven et de vérifier de manière hebdomadaire si des mises à jour sont disponibles. Dependabot pourra donc proposer des pull requests de mise à jour de dépendances lorsque des versions plus récentes sont détectées. 
+2. **CodeQL :** Un workflow de code scanning CodeQL a été mis en place via GitHub Actions. Ce workflow permet d'analyser automatiquement le code source afin de détecter d'éventuelles failles de sécurité ou de mauvaises pratiques.
 
 Ces workflows fonctionnent en parallèle de la pipeline principale et contribuent à maintenir un haut niveau de qualité et de sécurité dans le projet.
 
@@ -71,13 +67,13 @@ Chaque membre de l'équipe a été responsable de différentes parties du projet
 ### Nathan Lambrechts
 
 - Activation de la gestion des dépendances avec Dependabot et création de son fichier pour configurer les mises à jour Maven 
-- Mise en place du code scanning avec la configuration de CodeQL et l'ajout d'un workflow Github Actions pour une analyse automatique du code
+- Mise en place du code scanning avec la configuration de CodeQL et l'ajout d'un workflow GitHub Actions pour une analyse automatique du code
 
 ### Louca Mathieu
 
 - Intégration de la génération de rapport de code coverage dans le CI/CD. 
 - Intégration de SonarCloud au projet. 
-- Faire en sorte que le pipeline ne soit pas run si seulement de la documentation est ajouté. 
+- Faire en sorte que le pipeline ne soit pas run si seulement de la documentation est ajoutée. 
 
 ### Florian Stormacq
 
@@ -89,11 +85,11 @@ Chaque membre de l'équipe a été responsable de différentes parties du projet
 
 Comme tout projet, celui-ci a rencontré des défis et de nombreuses opportunités d'apprentissage. La mise en place d'une pipeline CI/CD a permis de comprendre par la pratique les concepts de l'intégration continue et du déploiement continu, ainsi que l'importance de la qualité du code et des tests automatisés.
 
-Cependant, des améliorations sont encore possibles. En effet, nous avions par exemple eu l'idée initial d'intégrer une étape de deploiement d’un conteneur Docker pour le projet, mais nous avons pas été à bout de l'idée. 
+Cependant, des améliorations sont encore possibles. En effet, nous avions par exemple eu l'idée initiale d'intégrer une étape de déploiement d’un conteneur Docker pour le projet, afin de permettre un déploiement plus facile de l'application. Néanmoins, en raison de contraintes de temps, cette fonctionnalité n'a pas pu être implémentée dans le cadre de ce projet. 
 
 ... TO DO (autres idées)
 
-De plus, certains aspects de ce projet se sont avérés plus complexes que prévu, tels que la mise en place de SonarCloud. Bien que familarisier une première fois avec dans le cours de INFOM124 (Vérification & Validation Logicielle), une mise en main a été nécéssaire et certaines difficultés ont été rencontrés, notamment à la modification des prérequis de sonar pour se lancer dans le CI (intiallement nous avions needs: tests puis nous avons modifié pour needs: [build, coverage]) sauf que cela a crée des soucis pour reconnaitre SonarCloud. 
+De plus, certains aspects de ce projet se sont avérés plus complexes que prévu, tels que la mise en place de SonarCloud. Bien que familiarisé une première fois avec dans le cours de INFOM124 (Vérification & Validation Logicielle), une mise en main a été nécessaire et certaines difficultés ont été rencontrées, notamment à la modification des prérequis de sonar pour se lancer dans le CI (initialement nous avions `needs: tests` puis nous avons modifié pour `needs: [build, coverage]`) sauf que cela a créé des soucis pour reconnaitre SonarCloud. 
 
 ... TO DO (autres difficultés)
 
@@ -107,4 +103,4 @@ En supplément du workflow principal décrit précédemment, plusieurs fichiers 
 
 ## 6. Conclusion
 
-Ce deuxième projet nous a permis de mettre en pratique les concepts théoriques abordés dans le premier projet basé sur les recherches DORA. Alors que le projet précédent était principalement axé sur l'analyse et la recherche, ce projet nous a donné l'occasion d'appliquer ces principes de manière pratique grâce à la mise en œuvre d'un pipeline CI/CD et des meilleures pratiques DevOps pour un projet 2048.
+Ce deuxième projet nous a permis de mettre en pratique les concepts théoriques abordés dans le premier projet basé sur les recherches DORA. Alors que le projet précédent était principalement axé sur l'analyse et la recherche, ce projet nous a donné l'occasion d'appliquer ces principes de manière pratique grâce à la mise en oeuvre d'un pipeline CI/CD et des meilleures pratiques DevOps pour un projet 2048.
