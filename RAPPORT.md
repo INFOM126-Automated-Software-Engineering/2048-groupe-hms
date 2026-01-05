@@ -29,7 +29,7 @@ Cette double approche permet de garantir que les modifications critiques sont to
 
 ### 2.1 Optimisation du déclenchement automatique
 
-Une optimisation a été mise en place pour éviter l'exécution de la pipeline lors de modifications n'impactant que la documentation, tels que les fichiers Markdown ou le repértoire `docs/*`. Cela permet une économie de ressources ainsi qu'un gain de temps lors de la revue des pull requests de documentation.
+Une optimisation a été mise en place pour éviter l'exécution de la pipeline lors de modifications n'impactant que la documentation, tels que les fichiers Markdown ou le répertoire `docs/*`. Cela permet une économie de ressources ainsi qu'un gain de temps lors de la revue des pull requests de documentation.
 
 ### 2.2 Étapes de la pipeline
 
