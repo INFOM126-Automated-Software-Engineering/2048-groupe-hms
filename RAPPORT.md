@@ -102,7 +102,7 @@ De plus, certains aspects de ce projet se sont avérés plus complexes que prév
 En supplément du workflow principal décrit précédemment, plusieurs fichiers markdown ont été créés pour aider à la gestion du projet et à la contribution des membres :
 
 - `CONTRIBUTING.md` : Ce fichier définit les règles de contribution au projet, incluant les exigences de pull request et les bonnes pratiques de codage.
-- `pull_request_template.md` : Un modèle pour les pull requests, facilitant la standardisation des contributions.
+- `.github/PULL_REQUEST_TEMPLATE.md` : Un modèle pour les pull requests, facilitant la standardisation des contributions.
 - Dossier `.github/ISSUE_TEMPLATE` : Contient des modèles pour la création d'issues, aidant à structurer les rapports de bugs et les demandes de fonctionnalités.
 
 ## 6. Conclusion
