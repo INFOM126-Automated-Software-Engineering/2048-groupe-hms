@@ -35,7 +35,7 @@ Une optimisation a été mise en place pour éviter l'exécution de la pipeline 
 
 La pipeline principale est composée de cinq jobs distincts : 
 
-1. **Linting :** Cette étape garantie la qualité du code en vérifiant son style et sa conformité aux normes établies, via l'utilisation de l'outil Maven Formatter.
+1. **Linting :** Cette étape garantit la qualité du code en vérifiant son style et sa conformité aux normes établies, via l'utilisation de l'outil Maven Formatter.
 2. **Tests :** Cette étape exécute les tests unitaires pour vérifier que le code fonctionne comme prévu, également via Maven.
 3. **Coverage :** Cette étape génère un rapport de couverture de code à l'aide de JaCoCo, permettant d'évaluer la qualité des tests.
 4. **Build :** Cette étape compile le projet pour s'assurer que le code source peut être transformé en un artefact exécutable.
